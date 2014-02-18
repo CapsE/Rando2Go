@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/radarButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/radar_icon" />
+
+    <ImageView
+        android:id="@+id/hero_picture"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/radarButton2"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hero" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        
+        android:layout_below="@+id/hero_picture" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             >
+            
+            <ImageView
+		        android:id="@+id/item1"
+		        android:layout_width="60dp"
+		        android:layout_height="60dp"
+		        android:scaleType="fitCenter"
+		        android:padding="5dip"
+		        android:src="@drawable/item_amulett" />
+            <ImageView
+		        android:id="@+id/item2"
+		        android:layout_width="60dp"
+		        android:layout_height="60dp"
+		        android:scaleType="fitCenter"
+		        android:padding="5dip"
+		        android:src="@drawable/item_heiltrank" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
